@@ -16,113 +16,114 @@ document.getElementById("m").addEventListener("click",o4);
 document.getElementById("sr").addEventListener("click",showResult);
 
 function n1 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n1").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n1").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n2 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n2").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n2").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n3 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n3").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n3").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n4 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n4").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n4").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n5 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n5").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n5").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n6 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n6").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n6").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n7 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n7").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n7").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n8 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n8").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n8").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n9 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n9").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n9").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function n0 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n0").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("n0").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + " " + sumado + " "
 }
 
 function o1 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("s").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("s").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function o2 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("r").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("r").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function o3 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("d").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("d").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function o4 () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("m").innerHTML;
+	var actual = document.getElementById('resultado').innerHTML;
+	var sumado = document.getElementById("m").innerHTML;
 	document.getElementById("resultado").innerHTML = actual + sumado
 }
 
 function showResult () {
-	let actual = document.getElementById('resultado').innerHTML;
-	let suma = actual.indexOf("+");
-	let resta = actual.indexOf("-");
-	let div = actual.indexOf("÷");
-	let mult = actual.indexOf("x");
+	var actual = document.getElementById('resultado').innerHTML;
+	var suma = actual.indexOf("+");
+	var resta = actual.indexOf("-");
+	var div = actual.indexOf("÷");
+	var mult = actual.indexOf("x");
+	
 
 	if (suma !== -1) {
 		arr = actual.split("+",2);
-		res = parseInt(arr[0]) + parseInt(arr[1]);
-		document.getElementById("resultado").innerHTML = res;
+		num = parseInt(arr[0]) + parseInt(arr[1]);
+		document.getElementById("resultado").innerHTML = num;
 	} else if (resta !== -1) {
 		arr = actual.split("-",2);
-		res = (arr[0]) - (arr[1]);
-		document.getElementById("resultado").innerHTML = res;
+		num = arr[0] - arr[1];
+		document.getElementById("resultado").innerHTML = num;
 	} else if (div !== -1) {
 		arr = actual.split("÷",2);
-		res = (arr[0]) / (arr[1]);
-		document.getElementById("resultado").innerHTML = res;
-	} else if (mult !== -1) {}
+		num = arr[0] / arr[1];
+		document.getElementById("resultado").innerHTML = num;
+	} else if (mult !== -1) {
 		arr = actual.split("x",2);
-		res = (arr[0]) * (arr[1]);
-		document.getElementById("resultado").innerHTML = res;
+		num = arr[0] * arr[1];
+		document.getElementById("resultado").innerHTML = num;
+	}
+}	
 
-	
-}
 
