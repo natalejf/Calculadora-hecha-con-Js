@@ -5,7 +5,7 @@
 }
 
 .calculadora {
-	background-color: #ededed;
+	background-color: #1a1a1a;
 	width: fit-content;
 	margin: auto;
 	margin-top: 35px;
@@ -44,7 +44,7 @@
 	width: 54px;
 	height: 54px;
 	padding: 9px 15px;
-	background-color: #000;
+	background-color: orange;
 	color: #FFF;
 	border: none;
 
